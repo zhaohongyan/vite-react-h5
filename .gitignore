@@ -3,3 +3,7 @@ node_modules
 dist
 dist-ssr
 *.local
+
+# build
+vite-react
+vite-react-build
