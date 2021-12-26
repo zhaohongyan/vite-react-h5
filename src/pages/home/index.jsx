@@ -33,7 +33,7 @@ export default function Home() {
         />
       </div>
 
-      <Button block color='primary' size='large' onClick={submit}>确定</Button>
+      <Button block color='primary' size='middle' onClick={submit}>确定</Button>
     </div>
   )
 }

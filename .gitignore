@@ -5,5 +5,8 @@ dist-ssr
 *.local
 
 # build
+build
+dist
 vite-react
 vite-react-build
+vite-react-h5-build

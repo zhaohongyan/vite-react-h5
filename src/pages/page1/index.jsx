@@ -2,8 +2,8 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 
 export default () => {
-  let { id } = useParams();
+  let { name } = useParams();
   return (
-    <div>{id}</div>
+    <div>{name}</div>
   )
 }
