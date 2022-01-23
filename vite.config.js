@@ -4,8 +4,6 @@ import react from '@vitejs/plugin-react'
 // import styleImport from 'vite-plugin-style-import'
 import createImportPlugin from 'vite-plugin-import';
 
-const appPackageJson = require('./package.json')
-
 // https://vitejs.dev/config/
 export default defineConfig({
   css: {
@@ -16,7 +14,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: `${appPackageJson.name}-build`,
+    // outDir: `${appPackageJson.name}-build`,
     // sourcemap: false,
   },
   resolve: {
