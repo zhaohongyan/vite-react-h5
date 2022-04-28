@@ -25,3 +25,5 @@ theme [config](./src/theme.css)
 ### sourcemap
 
 build.sourcemap
+
+本地打包推送到 github, 服务器直接从 github 拉取
