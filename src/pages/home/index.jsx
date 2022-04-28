@@ -8,32 +8,12 @@ export default function Home() {
   let location = useLocation();
   let navigate = useNavigate();
 
-  const submit = () => {
-    if (!value) {
-      Toast.show({
-        content: '请输入姓名',
-        position: 'top',
-      })
-      return
-    }
-    navigate(`/page1/${value}`)
-  }
-
   return (
     <div className={styles.container}>
-      <p>请输入被表白人的姓名</p>
-      <div className={styles.border_b}>
-        <Input
-          clearable
-          placeholder='请输入姓名'
-          value={value}
-          onChange={val => {
-            setValue(val)
-          }}
-        />
-      </div>
-
-      <Button block color='primary' size='middle' onClick={submit}>确定</Button>
+      <h3>首页</h3>
+      <Link to="/page1/1">link to page1</Link>
+      <br />
+      <Button onClick={() => navigate('/page1/2')}>navigate</Button>
     </div>
   )
 }

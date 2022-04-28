@@ -10,3 +10,6 @@ dist
 vite-react
 vite-react-build
 vite-react-h5-build
+
+yarn.lock
+package-lock.json

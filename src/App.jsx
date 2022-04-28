@@ -12,8 +12,8 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route element={<Home />} />
-          <Route path="page1/:name" element={<Page1 />} />
+          <Route index element={<Home />} />
+          <Route path="page1/:id" element={<Page1 />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>

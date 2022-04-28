@@ -7,7 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "antd-mobile": "^5.0.0-rc.6",
+    "antd-mobile": "5.10.4",
     "less": "^4.1.2",
     "lodash-es": "^4.17.21",
     "moment": "^2.29.1",

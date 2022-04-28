@@ -1,9 +1,15 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
+import { Button, Input, Toast } from 'antd-mobile'
 
 export default () => {
-  let { name } = useParams();
+  let { id } = useParams();
+  const na = useNavigate()
   return (
-    <div>{name}</div>
+    <div>
+      <Button onClick={() => na(-1)}>返回上一页</Button>
+      <br />
+      id: {id}
+    </div>
   )
 }
