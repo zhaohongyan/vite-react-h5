@@ -1,11 +1,25 @@
-import { Link, Outlet } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Link, Outlet, useNavigate } from 'react-router-dom'
+import { LeftOutline, CloseOutline } from 'antd-mobile-icons'
 import styles from './index.module.less'
 
 export default () => {
+  const na = useNavigate()
+  useEffect(() => {
+    console.log('layout render')
+  })
+
+  const back = () => {
+    na(-1)
+  }
+
   return (
     <div className={styles.container}>
       <main>
-        <header>头部</header>
+        <header>
+          <LeftOutline onClick={back} />
+          <span className={styles.text}>头部</span>
+        </header>
 
         <section>
           <h3>网站开发中，敬请期待。。。</h3>
